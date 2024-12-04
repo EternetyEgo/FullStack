@@ -1,0 +1,4 @@
+{
+  "prettier.printWidth": 9999,
+  "editor.formatOnSave": true
+}

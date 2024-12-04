@@ -1,0 +1,13 @@
+{
+    "app": {
+      "port": 80
+    },
+    "db": {
+      "host": "prod-db-host.com",
+      "name": "production_db"
+    },
+    "jwt": {
+      "secret": "prodSecretKey"
+    }
+  }
+  

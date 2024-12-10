@@ -1,12 +1,10 @@
 {
-    "app": {
-      "port": 3001
-    },
-    "db": {
-      "name": "development_db"
-    },
-    "jwt": {
-      "secret": "token-key"
-    }
+  "tokenPrivateKey": "dev-token-key",
+  "app": {
+    "port": 3001
+  },
+  "db": {
+    "host": "dev-db-host.com",
+    "name": "dev_db"
   }
-  
+}

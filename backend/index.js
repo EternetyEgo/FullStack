@@ -1,3 +1,4 @@
+'use strict'
 const express = require("express");
 const app = express();
 const apis = require("./server/apis");

@@ -1,16 +1,16 @@
+"use strict";
 const express = require("express");
 const router = express.Router();
-const { Card } = require("../modules/Card");
+const Card = require("../modules/Card");
+const auth = require("../middleware/token");
 
-router.post("/create", async (req, res) => {
-  let { img, name, desc, creator } = req.body;
 
-  const validData = await Card.findOne({
-    img,
-    name,
-    desc,
-    creator,
-  });
+// create card 
+router.post("/create", auth, async (req, res) => {
+  let { img, name, desc, category, creator } = req.body;
+
+  const validData = await Card.findOne({ name });
+
   if (validData)
     return res.json({
       status: false,
@@ -27,21 +27,26 @@ router.post("/create", async (req, res) => {
       message: "Yozgan ma'lumotlaringiz juda qisqa",
     });
 
-  const data = await Card({
-    img,
-    name,
-    desc,
-    creator,
+  const data = new Card({
+    img: img,
+    name: name,
+    desc: desc,
+    category: category,
+    creator: creator,
   });
 
   await data.save();
+
   res.json({
     status: true,
-    message: "Ma'lumot qo'shildi",
+    message: "Chipta Saqlandi",
+    data: data,
   });
 });
 
-router.get("/all", async (req, res) => {
+
+// all get card 
+router.get("/all", auth, async (req, res) => {
   const allData = await Card.find();
   res.json({
     status: true,
@@ -49,12 +54,29 @@ router.get("/all", async (req, res) => {
   });
 });
 
+
+// get by id 
 router.get("/:id", async (req, res) => {
-  const allData = await Card.findById(req.params.id);
-  res.json({
-    status: true,
-    message: allData,
-  });
+  try {
+    const { id } = req.params;
+    const card = await Card.findById(id);
+
+    if (!card) {
+      return res.status(404).json({
+        status: false,
+        message: "Card topilmadi",
+      });
+    }
+    res.json({
+      status: true,
+      message: card,
+    });
+  } catch (error) {
+    res.status(500).json({
+      status: false,
+      message: "Serverda xatolik yuz berdi",
+    });
+  }
 });
 
 module.exports = router;

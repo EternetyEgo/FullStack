@@ -16,12 +16,9 @@ const auth = async function (req, res, next) {
     req.user = user;
     next();
   } catch (err) {
-    res.json({
-      status: false,
-      message: "yaroqsiz token iltimos profilga qaytadan kiring",
-    });
+    req.user = null;
+    next();
   }
 };
 
-
-module.exports = auth
+module.exports = auth;

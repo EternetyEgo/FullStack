@@ -7,17 +7,20 @@ const auth = async function (req, res, next) {
   if (!token) {
     return res.status(401).json({
       status: false,
-      message: "token bolmaganligi sabab sorov toxtatildi",
+      message: "Token bolmaganligi sabab sorov toxtatildi",
     });
   }
   try {
     const decoded = jwt.verify(token, config.get("tokenPrivateKey"));
     const user = await User.findById(decoded.user);
-    req.user = user;
+    req.user = user; // foydalanuvchi ma'lumotlarini req.user ga saqlaymiz
     next();
   } catch (err) {
     req.user = null;
-    next();
+    res.status(401).json({
+      status: false,
+      message: "Token is not valid",
+    });
   }
 };
 

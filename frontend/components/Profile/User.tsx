@@ -8,7 +8,7 @@ import { IoMailSharp } from "react-icons/io5";
 import { HiOutlineStatusOnline } from "react-icons/hi";
 import { IoMdSettings } from "react-icons/io";
 import Card from "../Card";
-import AddProjectCard from "../AddCard";
+import AddProjectCard from "./AddCard";
 
 export default function User() {
   const [phoneNumber, setPhoneNumber] = useState('');

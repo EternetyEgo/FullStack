@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (max-width: 1024px) {
+    /* Adjust font size for tablets */
+    .text-lg {
+      font-size: 1rem;
+    }
+    /* Stack the columns for smaller screens */
+    .table-auto {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .btn-md {
+      font-size: 0.875rem;
+    }
+  }
+  

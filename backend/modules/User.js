@@ -7,6 +7,6 @@ const userScheme = new mongoose.Schema({
   tel: { type: String, required: true, unique: true },
   skills: {type: [String]},
   password: {type: String},
-});
+},{ timestamps: true });
 
 module.exports = mongoose.model("User", userScheme);

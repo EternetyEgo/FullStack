@@ -1,2 +1,14 @@
 token
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc1ODVkMmZkOTUwZTkyYmI4YzQxZTE2IiwiaWF0IjoxNzMzODQ0MzA2LCJleHAiOjE3MzM4NDc5MDZ9.PPFK1TZ23Y1Y7R_I_CASDifp1L3TZVfINiYzale4c6g
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjc1YThmZGRlYjgwY2Q4YWJlNWU2YTU5IiwiaWF0IjoxNzMzOTg4MzM5LCJleHAiOjE3NjU1NDU5Mzl9.WABUuDKaD6DGqKNW_R0pXptUa7rxSn6iR5RipCKnb_o
+
+likesni hal qilish 
+skills orqali filter qilish js, python
+search button orqali filter qilish
+iconca qilish yani nechdadir proekt qoysa qandaydir iconca nameini yonida paydo bolib qolish kerak 
+ertaga kodni korsatib nima vazifa bajarilayotganini korsatib tushuntirb berish 
+
+
+request frontend tarafdan kelayotgan malumot
+response backendan ketadigan malumot
+req.body orqali foydalanuvchi kiritgan ma'lumotlarni oladi.
+User.findOne orqali username mavjudligini tekshiradi.

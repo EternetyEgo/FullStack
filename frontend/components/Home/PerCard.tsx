@@ -1,4 +1,5 @@
 import React from "react";
+import { FiSettings } from "react-icons/fi";
 import { IoMdArrowRoundForward } from "react-icons/io";
 
 const PerCard = () => {
@@ -17,109 +18,31 @@ const PerCard = () => {
           </a>
         </div>
         <div className="bg-base-100 flex flex-wrap gap-10">
-          <div className="w-full sm:w-[350px] md:w-[380px] lg:w-[420px] bg-base-100 shadow-xl rounded-lg border border-gray-300 overflow-hidden">
-            {/* Image Section */}
-            <div className="w-full h-56">
+          <div className="relative w-[300px] h-[300px] overflow-hidden rounded-lg shadow-xl group">
+            {/* Rasmi */}
+            <figure className="w-full h-full">
               <img
-                src="https://via.placeholder.com/350x200" // Replace with your image URL
-                alt="Card Image"
+                src="https://www.shutterstock.com/image-vector/guard-c-logo-vector-icon-260nw-2197113021.jpg"
+                alt="Img"
+                width={300} // Set a fixed width
+                height={300} // Set a fixed height
                 className="w-full h-full object-cover"
               />
-            </div>
+            </figure>
 
-            {/* Content Section */}
-            <div className="p-8">
-              {/* Name */}
-              <h2 className="text-2xl font-semibold text-gray-800 mb-3">Card Name</h2>
-
-              {/* Description */}
-              <p className="text-gray-600 text-base mb-5">This is a brief description of the content. It explains what the card is about in more detail.</p>
-
-              {/* Created By Section */}
-              <div className="flex justify-end text-gray-600 text-sm">
-                <span>
-                  Created by: <span className="font-semibold">John Doe</span>
-                </span>
+            {/* Hoverda chiqadigan yozuvlar */}
+            <div className="absolute inset-0 bg-black/70 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h2 className="text-xl font-bold mb-2">Car crash</h2>
+              <p className="text-center px-4">Sayt avtohalokatga uchragan odamlarga bag'ishlanadi. Va yo'l qoidalari batafsil yoritilgan.</p>
+              <div className="mt-4">
+                <h6 className="font-bold">Created by: Anpanman</h6>
               </div>
             </div>
-          </div>
-          <div className="w-full sm:w-[350px] md:w-[380px] lg:w-[420px] bg-base-100 shadow-xl rounded-lg border border-gray-300 overflow-hidden">
-            {/* Image Section */}
-            <div className="w-full h-56">
-              <img
-                src="https://via.placeholder.com/350x200" // Replace with your image URL
-                alt="Card Image"
-                className="w-full h-full object-cover"
-              />
-            </div>
 
-            {/* Content Section */}
-            <div className="p-8">
-              {/* Name */}
-              <h2 className="text-2xl font-semibold text-gray-800 mb-3">Card Name</h2>
-
-              {/* Description */}
-              <p className="text-gray-600 text-base mb-5">This is a brief description of the content. It explains what the card is about in more detail.</p>
-
-              {/* Created By Section */}
-              <div className="flex justify-end text-gray-600 text-sm">
-                <span>
-                  Created by: <span className="font-semibold">John Doe</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="w-full sm:w-[350px] md:w-[380px] lg:w-[420px] bg-base-100 shadow-xl rounded-lg border border-gray-300 overflow-hidden">
-            {/* Image Section */}
-            <div className="w-full h-56">
-              <img
-                src="https://via.placeholder.com/350x200" // Replace with your image URL
-                alt="Card Image"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Content Section */}
-            <div className="p-8">
-              {/* Name */}
-              <h2 className="text-2xl font-semibold text-gray-800 mb-3">Card Name</h2>
-
-              {/* Description */}
-              <p className="text-gray-600 text-base mb-5">This is a brief description of the content. It explains what the card is about in more detail.</p>
-
-              {/* Created By Section */}
-              <div className="flex justify-end text-gray-600 text-sm">
-                <span>
-                  Created by: <span className="font-semibold">John Doe</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="w-full sm:w-[350px] md:w-[380px] lg:w-[420px] bg-base-100 shadow-xl rounded-lg border border-gray-300 overflow-hidden">
-            {/* Image Section */}
-            <div className="w-full h-56">
-              <img
-                src="https://via.placeholder.com/350x200" // Replace with your image URL
-                alt="Card Image"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Content Section */}
-            <div className="p-8">
-              {/* Name */}
-              <h2 className="text-2xl font-semibold text-gray-800 mb-3">Card Name</h2>
-
-              {/* Description */}
-              <p className="text-gray-600 text-base mb-5">This is a brief description of the content. It explains what the card is about in more detail.</p>
-
-              {/* Created By Section */}
-              <div className="flex justify-end text-gray-600 text-sm">
-                <span>
-                  Created by: <span className="font-semibold">John Doe</span>
-                </span>
-              </div>
-            </div>
+            {/* Yumaloq tugma */}
+            <button className="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex justify-center items-center shadow-md hover:bg-gray-200 transition-colors">
+              <FiSettings className="text-xl text-black" />
+            </button>
           </div>
         </div>
       </div>

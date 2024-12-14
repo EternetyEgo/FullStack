@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
+import Register from "./Register";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,16 +43,7 @@ function Navbar() {
         {/* Actions */}
         <div className="navbar-end flex items-center">
           {/* Select + Buttons (Desktop Only) */}
-          <div className="hidden lg:flex items-center">
-            <select className="select select-bordered mr-4 border-gray-400">
-              <option disabled>Tilni tanlang</option>
-              <option value="uz">O‘zbek (UZ)</option>
-              <option value="en">English (EN)</option>
-              <option value="ru">Русский (RU)</option>
-            </select>
-            <button className="btn btn-outline border-gray-400 text-gray-600 hover:bg-gray-200 mr-4">Kirish</button>
-            <button className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600">Ro‘yxatdan o‘tish</button>
-          </div>
+    <Register />
 
           {/* Mobile Menu */}
           <div className="lg:hidden">

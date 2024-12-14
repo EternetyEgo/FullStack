@@ -3,18 +3,55 @@
 @tailwind utilities;
 
 @media (max-width: 1024px) {
-    /* Adjust font size for tablets */
-    .text-lg {
-      font-size: 1rem;
-    }
-    /* Stack the columns for smaller screens */
-    .table-auto {
-      display: block;
-      overflow-x: auto;
-      white-space: nowrap;
-    }
-    .btn-md {
-      font-size: 0.875rem;
-    }
+  /* Adjust font size for tablets */
+  .text-lg {
+    font-size: 1rem;
   }
-  
+  /* Stack the columns for smaller screens */
+  .table-auto {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .btn-md {
+    font-size: 0.875rem;
+  }
+}
+
+/* Animation */
+@-webkit-keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Variables */
+/* Loading Icon */
+.loading {
+  width: 100px;
+  height: 100px;
+}
+.loading__ring {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.loading__ring:first-child {
+  transform: skew(30deg, 20deg);
+}
+.loading__ring:last-child {
+  transform: skew(-30deg, -20deg) scale(-1, 1);
+}
+.loading__ring:last-child svg {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.loading__ring svg {
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+  fill: rgba(0, 0, 0, 0.2);
+}

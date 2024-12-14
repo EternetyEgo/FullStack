@@ -3,32 +3,30 @@ import Marquee from "react-fast-marquee";
 
 export default function Main() {
   return (
-    <div className="text-center py-2  bg-black text-white pt-40 md:pt-[200px]">
+    <div className="text-center py-2  bg-black text-white pt-40 md:pt-[200px] rounded-t-[30px]">
       {/* Birinchi bo'lim */}
       <div className="h-[80vh flex flex-col items-center justify-center gap-8">
         <h2 className="text-3xl md:text-6xl text-center font-bold text-white mb-4">Chosen by leading creatives globally</h2>
         <p className="text-gray-400 mb-12">UI8 empowers over 700,000 designers from all over the world.</p>
         {/* Marquee Component */}
-        <Marquee gradient={false} speed={50} pauseOnHover={true} direction="left" loop={0}>
-          <div className="flex items-center gap-6">
-            {/* Replaced Logos with Larger Images */}
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwmizMHZFpQtH9RA3PxBIWOsama4AMJoHuQ&s" alt="Logo 1" className="h-16 sm:h-20" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwmizMHZFpQtH9RA3PxBIWOsama4AMJoHuQ&s" alt="Logo 2" className="h-16 sm:h-20" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwmizMHZFpQtH9RA3PxBIWOsama4AMJoHuQ&s" alt="Logo 3" className="h-16 sm:h-20" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwmizMHZFpQtH9RA3PxBIWOsama4AMJoHuQ&s" alt="Logo 4" className="h-16 sm:h-20" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwmizMHZFpQtH9RA3PxBIWOsama4AMJoHuQ&s" alt="Logo 5" className="h-16 sm:h-20" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwmizMHZFpQtH9RA3PxBIWOsama4AMJoHuQ&s" alt="Logo 6" className="h-16 sm:h-20" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwmizMHZFpQtH9RA3PxBIWOsama4AMJoHuQ&s" alt="Logo 7" className="h-16 sm:h-20" />
+        <Marquee gradient={false} speed={50} pauseOnHover={true} direction="left" loop={0} autoFill>
+          <div className="flex items-center gap-20 mr-20">
+            <img src="https://ibanfirst.com/_next/static/media/iban-logo.0dfe61b1.svg" alt="Logo 1" className="h-16 sm:h-16" />
+            <img src="https://ibanfirst.com/_next/static/media/iban-logo.0dfe61b1.svg" alt="Logo 1" className="h-16 sm:h-16" />
+            <img src="https://ibanfirst.com/_next/static/media/iban-logo.0dfe61b1.svg" alt="Logo 1" className="h-16 sm:h-16" />
+            <img src="https://ibanfirst.com/_next/static/media/iban-logo.0dfe61b1.svg" alt="Logo 1" className="h-16 sm:h-16" />
+            <img src="https://ibanfirst.com/_next/static/media/iban-logo.0dfe61b1.svg" alt="Logo 1" className="h-16 sm:h-16" />
+            <img src="https://ibanfirst.com/_next/static/media/iban-logo.0dfe61b1.svg" alt="Logo 1" className="h-16 sm:h-16" />
+            <img src="https://ibanfirst.com/_next/static/media/iban-logo.0dfe61b1.svg" alt="Logo 1" className="h-16 sm:h-16" />
           </div>
-          {/* Repeat Logos to ensure continuous scrolling */}
-          <div className="flex items-center gap-6">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwmizMHZFpQtH9RA3PxBIWOsama4AMJoHuQ&s" alt="Logo 1" className="h-16 sm:h-20" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwmizMHZFpQtH9RA3PxBIWOsama4AMJoHuQ&s" alt="Logo 2" className="h-16 sm:h-20" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwmizMHZFpQtH9RA3PxBIWOsama4AMJoHuQ&s" alt="Logo 3" className="h-16 sm:h-20" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwmizMHZFpQtH9RA3PxBIWOsama4AMJoHuQ&s" alt="Logo 4" className="h-16 sm:h-20" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwmizMHZFpQtH9RA3PxBIWOsama4AMJoHuQ&s" alt="Logo 5" className="h-16 sm:h-20" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwmizMHZFpQtH9RA3PxBIWOsama4AMJoHuQ&s" alt="Logo 6" className="h-16 sm:h-20" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwmizMHZFpQtH9RA3PxBIWOsama4AMJoHuQ&s" alt="Logo 7" className="h-16 sm:h-20" />
+          <div className="flex items-center gap-20 mr-20">
+          <img src="https://ibanfirst.com/_next/static/media/iban-logo.0dfe61b1.svg" alt="Logo 1" className="h-16 sm:h-16" />
+            <img src="https://ibanfirst.com/_next/static/media/iban-logo.0dfe61b1.svg" alt="Logo 1" className="h-16 sm:h-16" />
+            <img src="https://ibanfirst.com/_next/static/media/iban-logo.0dfe61b1.svg" alt="Logo 1" className="h-16 sm:h-16" />
+            <img src="https://ibanfirst.com/_next/static/media/iban-logo.0dfe61b1.svg" alt="Logo 1" className="h-16 sm:h-16" />
+            <img src="https://ibanfirst.com/_next/static/media/iban-logo.0dfe61b1.svg" alt="Logo 1" className="h-16 sm:h-16" />
+            <img src="https://ibanfirst.com/_next/static/media/iban-logo.0dfe61b1.svg" alt="Logo 1" className="h-16 sm:h-16" />
+            <img src="https://ibanfirst.com/_next/static/media/iban-logo.0dfe61b1.svg" alt="Logo 1" className="h-16 sm:h-16" />
           </div>
         </Marquee>
       </div>

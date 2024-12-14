@@ -35,37 +35,43 @@ const Register: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <button
-        onClick={() => {
-          setIsLogin(false);
-          openModal();
-        }}
-        className="bg-orange-600 text-white px-6 py-3 rounded-lg hover:bg-orange-700 transition"
-      >
-        Register
-      </button>
+    <div className="flex items-center justify-center">
+      <div className="hidden lg:flex items-center">
+        <select className="select select-bordered mr-4 border-gray-400">
+          <option disabled>Tilni tanlang</option>
+          <option value="uz">O‘zbek (UZ)</option>
+          <option value="en">English (EN)</option>
+          <option value="ru">Русский (RU)</option>
+        </select>
+        <button
+          onClick={() => {
+            setIsLogin(true);
+            openModal();
+          }}
+          className="btn btn-outline border-gray-400 text-gray-600 hover:bg-gray-200 mr-4"
+        >
+          Kirish
+        </button>
+        <button
+          onClick={() => {
+            setIsLogin(false);
+            openModal();
+          }}
+          className="btn btn-primary bg-blue-500 text-white hover:bg-blue-600"
+        >
+          Ro‘yxatdan o‘tish
+        </button>
+      </div>
 
       {/* Modal */}
       {isModalOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-30 flex justify-center items-center"
-          onClick={closeModal}
-        >
-          <div
-            className="bg-white rounded-2xl w-full max-w-md p-6 relative"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={closeModal}
-              className="absolute top-5 right-4 text-gray-500"
-            >
+        <div className="fixed inset-0 bg-black bg-opacity-30 flex justify-center items-center" onClick={closeModal}>
+          <div className="bg-white rounded-2xl w-full max-w-md p-6 relative" onClick={(e) => e.stopPropagation()}>
+            <button onClick={closeModal} className="absolute top-5 right-4 text-gray-500">
               <IoCloseSharp size={25} />
             </button>
 
-            <h3 className="text-lg font-medium leading-6 text-gray-900">
-              {isLogin ? "Login" : "Register"}
-            </h3>
+            <h3 className="text-lg font-medium leading-6 text-gray-900">{isLogin ? "Login" : "Register"}</h3>
 
             {/* Modal Form Content */}
             <div className="mt-4">
@@ -103,10 +109,7 @@ const Register: React.FC = () => {
                           })
                         }
                       />
-                      <button
-                        onClick={() => setIsPasswordVisible(!isPasswordVisible)}
-                        className="ml-2 text-gray-500"
-                      >
+                      <button onClick={() => setIsPasswordVisible(!isPasswordVisible)} className="ml-2 text-gray-500">
                         {isPasswordVisible ? "Hide" : "Show"}
                       </button>
                     </div>
@@ -119,7 +122,7 @@ const Register: React.FC = () => {
                         onClick={() => {
                           setIsLogin(false);
                         }}
-                        className="text-orange-600 cursor-pointer"
+                        className="text-blue-500 cursor-pointer"
                       >
                         Register here
                       </span>
@@ -202,7 +205,7 @@ const Register: React.FC = () => {
                         onClick={() => {
                           setIsLogin(true);
                         }}
-                        className="text-orange-600 cursor-pointer"
+                        className="text-blue-500 cursor-pointer"
                       >
                         Login here
                       </span>
@@ -221,11 +224,7 @@ const Register: React.FC = () => {
             </div>
 
             <div className="mt-6">
-              <button
-                type="button"
-                className="w-full bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700"
-                onClick={isLogin ? handleLogin : handleRegister}
-              >
+              <button type="button" className="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" onClick={isLogin ? handleLogin : handleRegister}>
                 {isLogin ? "Login" : "Register"}
               </button>
             </div>

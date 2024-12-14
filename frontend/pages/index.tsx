@@ -7,6 +7,8 @@ import Users from "@/components/Home/Users";
 import Main from "@/components/Home/Main";
 import Footer from "@/components/Footer";
 import PerCard from "@/components/Home/PerCard";
+import { useState } from "react";
+import Loader from "@/components/Loader";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,14 +22,21 @@ const geistMono = localFont({
 });
 
 export default function Home() {
+  const [show, setShow] = useState(false);
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <Users />
-      <PerCard />
-      <Main />
-      <Footer />
+      {show ? (
+        <Loader />
+      ) : (
+        <div>
+          <Navbar />
+          <Hero />
+          <Users />
+          <PerCard />
+          <Main />
+          <Footer />
+        </div>
+      )}
     </div>
   );
 }

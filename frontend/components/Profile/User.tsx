@@ -1,4 +1,4 @@
-import { Img } from "@/public/img";
+// import { Img } from "@/public/img";
 import Image from "next/image";
 import { useState } from "react";
 import { CiPhone } from "react-icons/ci";
@@ -13,7 +13,7 @@ import AddProjectCard from "./AddCard";
 export default function User() {
   const [phoneNumber, setPhoneNumber] = useState('');
 
-  const formatPhoneNumber = (value) => {
+  const formatPhoneNumber = (value: any) => {
     let phone = value.replace(/\D/g, '');
 
     if (!phone.startsWith('998')) {
@@ -41,14 +41,14 @@ export default function User() {
     return formattedPhone;
   };
 
-  const handlePhoneChange = (e) => {
+  const handlePhoneChange = (e: any) => {
     const formattedPhoneNumber = formatPhoneNumber(e.target.value);
     setPhoneNumber(formattedPhoneNumber);
   };
 
   const [uploadedImage, setUploadedImage] = useState(null);
 
-  const handleImageUpload = (e) => {
+  const handleImageUpload = (e: any) => {
     const file = e.target.files[0];
     if (file) {
       const reader = new FileReader();
@@ -66,7 +66,7 @@ export default function User() {
         <div className="flex-shrink-0 border border-black p-4 rounded-lg w-full xl:w-[350px]">
           <div className="flex flex-col items-center">
             <Image
-              src={uploadedImage || Img}
+              src={uploadedImage || ""}
               alt="User Image"
               className="w-40 h-40 xl:w-60 xl:h-60 border border-black p-2 rounded-full object-cover"
               width={240}

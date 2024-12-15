@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import PerCard from "@/components/Home/PerCard";
 import { useState } from "react";
 import Loader from "@/components/Loader";
+import Marque from "@/components/Home/Marquee";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,6 +33,7 @@ export default function Home() {
           <Navbar />
           <Hero />
           <Users />
+          <Marque />
           <PerCard />
           <Main />
           <Footer />

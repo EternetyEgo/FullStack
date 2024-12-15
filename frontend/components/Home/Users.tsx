@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { IoMdArrowRoundForward } from "react-icons/io";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const users = [
   { name: "Julietpapa", profile: "Freelance", awards: 0, category: "Web Development" },
@@ -8,8 +10,11 @@ const users = [
 ];
 
 export default function Users() {
+    useEffect(() => {
+      AOS.init({ duration: 1000, once: true  }); 
+    }, []);
   return (
-    <div className="w-full pt-2 my-20">
+    <div className="w-full pt-2 my-20" data-aos="fade-up">
       <div className="bg-base-100 px-4 lg:px-8 w-[90%] mx-auto">
         {/* Popular Users Section */}
         <div className="flex justify-between items-center mb-6">

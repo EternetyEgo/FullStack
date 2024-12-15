@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaFolder, FaUser, FaUserPlus } from "react-icons/fa";
 import { GrTask } from "react-icons/gr";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Hero() {
+   useEffect(() => {
+      AOS.init({ duration: 1000, once: true  }); 
+    }, []);
   return (
-    <div className="p-8 w-full">
+    <div className="p-8 w-full" data-aos="fade-up">
       {/* Hero Section */}
       <div className="w-full min-h-[80vh] flex flex-col items-center justify-center px-4 relative">
         {/* Markaziy Matn */}

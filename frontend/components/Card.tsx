@@ -1,4 +1,4 @@
-import { Img } from '@/public/img';
+// import { Img } from '@/public/img';
 import Image from 'next/image';
 import React from 'react';
 import { FiSettings } from 'react-icons/fi';
@@ -8,7 +8,7 @@ export default function Card() {
     <div className="relative w-[300px] h-[300px] overflow-hidden rounded-lg shadow-xl group">
       {/* Rasmi */}
       <figure className="w-full h-full">
-        <Image src={Img} alt="Img" className="w-full h-full object-cover" />
+        <Image src="sa" alt="Img" className="w-full h-full object-cover" />
       </figure>
 
       {/* Hoverda chiqadigan yozuvlar */}

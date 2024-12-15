@@ -43,7 +43,9 @@ function Navbar() {
         {/* Actions */}
         <div className="navbar-end flex items-center">
           {/* Select + Buttons (Desktop Only) */}
-    <Register />
+          <div className="lg:flex hidden">
+            <Register />
+          </div>
 
           {/* Mobile Menu */}
           <div className="lg:hidden">
@@ -66,8 +68,7 @@ function Navbar() {
                   <option value="en">English (EN)</option>
                   <option value="ru">Русский (RU)</option>
                 </select>
-                <button className="btn btn-outline w-[90%] mx-auto mb-2 border-gray-400 text-gray-600 hover:bg-gray-200">Kirish</button>
-                <button className="btn btn-primary w-[90%] mx-auto bg-blue-500 text-white hover:bg-blue-600">Ro‘yxatdan o‘tish</button>
+                <Register />
               </div>
             )}
           </div>

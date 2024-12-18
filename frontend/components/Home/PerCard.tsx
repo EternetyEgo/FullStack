@@ -11,7 +11,7 @@ const PerCard = () => {
   }, []);
   return (
     <div className="w-full pt-4 my-40">
-      <div className="px-6 lg:px-10 w-[90%] mx-auto">
+      <div className="px-6 lg:px-10 md:w-[90%] mx-auto">
         {/* Popular Users Section */}
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold">Popular cards</h2>

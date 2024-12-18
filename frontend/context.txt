@@ -1,0 +1,27 @@
+// "dev": "next dev -H 192.168.100.8"
+
+Statistika:
+Foydalanuvchilar necha marta ko‘rilgan, necha marta izoh yozilganini ko‘ra olishi kerak.
+Matnlar:
+"Sizning ishingiz [150] marta ko‘rildi."
+"Sizning loyihangizga [10] izoh yozilgan."
+
+
+Dark/Light rejimini qo‘shish.
+CV yoki PDF portfolio yaratish funksiyasini qo‘shish.
+Foydalanuvchilar o‘z portfolio sahifalarini yuklab olishlari mumkin.
+Custom domain:
+Foydalanuvchilar o‘z portfoliolari uchun maxsus domen nomini tanlashi (masalan, user.ism.com).
+"Bu loyiha qanday maqsadga qaratilgan? Qanday texnologiyalar ishlatilgan? O‘rganish va ilova qilish uchun ideal loyiha."
+chat bolimi boladi osha yerdan private va global chat
+
+contact pageni qilish
+
+quiz bolimini qilish
+
+ About (Biz Haqimizda):
+"Bu platforma sizning yaratgan ishlaringizni dunyo bilan bo'lishish uchun yaratilgan. Bizning maqsadimiz — har bir foydalanuvchiga o‘z ishini ko‘rsatish, boshqalardan fikr olish va o‘zini rivojlantirish imkoniyatini yaratish. Yaratgan ishlari uchun sharhlar va fikr-mulohazalar olish, professional rivojlanish va yangi imkoniyatlarga yo‘l ochish uchun hoziroq ro'yxatdan o'ting!"
+About matni:
+"Biz yaratgan ishlaringizni, loyihalaringizni va ijodiy yondashuvlaringizni baham ko‘rish uchun platforma yaratdik. Bizning platformamizda o'z portfoliongizni yaratib, boshqa foydalanuvchilar bilan aloqada bo‘lish, baholash va yangi hamkorlik imkoniyatlarini topishingiz mumkin. O‘z ishlaringizni taqdim eting va yangi muvaffaqiyatlarga erishing!"
+
+bizni qulayliklarimiz u bul boaldi timleineda va pastida tez tez berildgan savolar

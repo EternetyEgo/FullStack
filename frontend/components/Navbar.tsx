@@ -25,17 +25,23 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={`w-full fixed top-0 z-[999] transition-all ${scrolling ? "bg-white bg-opacity-70 backdrop-blur-sm border-none" : "bg-white border-gray-300"}`}>
+    <div className={`w-full fixed top-0 z-[999] transition-all ${scrolling ? "bg-white bg-opacity-70  border-none" : "bg-white border-gray-300"}`}>
       <div className="navbar px-4 lg:px-8 w-[90%] mx-auto flex justify-between items-center">
         {/* Logo and Text on the Left */}
         <div className="navbar-start flex items-center">
           <a className="select-none normal-case text-[30px] font-bold mr-6 text-black">Logo</a>
           <h2 className="hidden lg:flex text-[16px] text-gray-600 font-medium space-x-6">
-            <a href="#home" className="hover:text-black transition-all">
+            <a href="./" className="hover:text-black transition-all">
               Bosh sahifa
             </a>
-            <a href="#about" className="hover:text-black transition-all">
+            <a href="./About" className="hover:text-black transition-all">
               Biz haqimizda
+            </a>
+            <a href="./Contact" className="hover:text-black transition-all">
+              Aloqa
+            </a>
+            <a href="./Contact" className="hover:text-black transition-all">
+              Viktorina
             </a>
           </h2>
         </div>
@@ -54,14 +60,20 @@ function Navbar() {
             </button>
             {menuOpen && (
               <div className="menu menu-compact absolute right-4 top-16 bg-white shadow-lg rounded-md w-64 z-[999]">
-                <h2 className="text-[16px] text-gray-600 font-medium mb-4 mt-4 px-4">
-                  <a href="#home" className="block mb-2 hover:text-black">
+                <ul className="text-[16px] text-gray-600 font-medium mb-4 mt-4 px-4 flex flex-col gap-4">
+                  <a href="./" className="block mb-2 hover:text-black">
                     Bosh sahifa
                   </a>
-                  <a href="#about" className="block hover:text-black">
+                  <a href="./About" className="block hover:text-black">
                     Biz haqimizda
                   </a>
-                </h2>
+                  <a href="./Contact" className="hover:text-black transition-all">
+                    Aloqa
+                  </a>
+                  <a href="#about" className="hover:text-black transition-all">
+                    Viktorina
+                  </a>
+                </ul>
                 <select className="select select-bordered w-[90%] mx-auto mb-4 border-gray-400">
                   <option disabled>Tilni tanlang</option>
                   <option value="uz">O‘zbek (UZ)</option>

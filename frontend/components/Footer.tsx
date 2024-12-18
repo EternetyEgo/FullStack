@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer
-      className="bg-black py-10 text-white w-full"
+      className="bg-[#020817] py-10 text-white w-full"
       style={{ boxShadow: "0 -1px 3px rgba(255, 255, 255, 0.5)" }}
     >
       <div className="px-4 lg:px-8 w-[90%] mx-auto">
@@ -9,12 +9,12 @@ const Footer = () => {
           {/* Logo and Copyright */}
           <div className="flex flex-col items-start w-full sm:w-auto">
             <img src="https://www.behance.net/favicon.ico" alt="Behance Logo" className="w-24 mb-4" />
-            <p className="text-lg">© 2024 Adobe Inc. All rights reserved.</p>
+            <p className="text-lg">© 2024 Portfolio Platformasi. Barcha huquqlar himoyalangan.</p>
           </div>
 
           {/* Built For Creatives */}
           <div className="w-full sm:w-auto">
-            <h3 className="text-xl font-semibold mb-4">Built For Creatives</h3>
+            <h3 className="text-xl font-semibold mb-4">Ijodkorlar Uchun Yaratilgan</h3>
             <a href="#" className="block text-lg mb-2 hover:opacity-80">
               Try Behance Pro
             </a>

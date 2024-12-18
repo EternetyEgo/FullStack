@@ -5,22 +5,24 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function Hero() {
-   useEffect(() => {
-      AOS.init({ duration: 1000, once: true  }); 
-    }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   return (
-    <div className="p-8 w-full" data-aos="fade-up">
+    <div className="md:p-8 p-6 w-full" data-aos="fade-up">
       {/* Hero Section */}
-      <div className="w-full min-h-[80vh] flex flex-col items-center justify-center px-4 relative">
+      <div className="w-full min-h-[90vh] flex flex-col items-center justify-center md:px-4 relative hero">
         {/* Markaziy Matn */}
-        <div className="text-center max-w-5xl">
-          <h1 className="text-4xl lg:text-7xl font-bold">
-            The World's <span className="text-blue-500">Best Creators</span> Are On Behance
+        <div className="md:text-center text-start md:w-[80%]">
+          <h1 className="text-[20px] sm:text-4xl lg:text-7xl font-bold tracking-wider leading-loose">
+            Bu platforma foydalanuvchilarga o‘z portfoliolarini yaratish
+            <span className="text-blue-500"> va dunyo bilan ulashish imkoniyatini</span> beradi
           </h1>
-          <p className="mt-4 text-xl text-gray-500">A comprehensive platform to help hirers and creators navigate the creative world from discovering inspiration, to connecting with one another.</p>
-          <div className="mt-6 flex justify-center gap-4">
-            <button className="btn btn-primary">Hire a Freelancer</button>
-            <button className="btn btn-outline">Try Behance Pro</button>
+
+          <p className="mt-4 text-xl text-gray-500">Har bir loyiha – bu bir hikoya. O‘z ishingizni yuklang, uni ta’riflab bering va o‘z natijangizni ko'rsating .</p>
+          <div className="mt-6 flex justify-center gap-4 md:flex-row flex-col">
+            <button className="btn btn-outline">Hoziroq boshlang!</button>
+            <button className="btn btn-primary">Bu qanday ishlaydi</button>
           </div>
         </div>
       </div>
@@ -33,7 +35,7 @@ export default function Hero() {
             <FaFolder color="white" size={"50%"} />
           </div>
           <div className="flex flex-col gap-2 text-center p-4">
-            <span className="text-[#7C8DB5] text-base sm:text-lg font-semibold">Projects</span>
+            <span className="text-[#7C8DB5] text-base sm:text-lg font-semibold">Yuklangan loyihalar</span>
             <span className="text-black text-2xl sm:text-3xl font-bold">112</span>
           </div>
         </div>
@@ -44,7 +46,7 @@ export default function Hero() {
             <FaUser color="white" size={"50%"} />
           </div>
           <div className="flex flex-col gap-2 text-center p-4">
-            <span className="text-[#7C8DB5] text-base sm:text-lg font-semibold">Users</span>
+            <span className="text-[#7C8DB5] text-base sm:text-lg font-semibold">Foydalanuvchilarimiz</span>
             <span className="text-black text-2xl sm:text-3xl font-bold">183,000</span>
           </div>
         </div>
@@ -55,7 +57,7 @@ export default function Hero() {
             <FaUserPlus color="white" size={"50%"} />
           </div>
           <div className="flex flex-col gap-2 text-center p-4">
-            <span className="text-[#7C8DB5] text-base sm:text-lg font-semibold">New Users</span>
+            <span className="text-[#7C8DB5] text-base sm:text-lg font-semibold">Biz haqimizdagi fiklrar</span>
             <span className="text-black text-2xl sm:text-3xl font-bold">183,000</span>
           </div>
         </div>

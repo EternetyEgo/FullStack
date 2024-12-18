@@ -70,7 +70,7 @@ router.get("/me/cards", auth, async (req, res, next) => {
 
 // register user
 router.post("/register", async (req, res) => {
-  const { name, username, email, tel, skills, password } = req.body;
+  const { name, username, email, tel, place, skills, password } = req.body;
   const user = await User.findOne({ username: username });
 
   const salt = await bcrypt.genSalt(10);
@@ -83,6 +83,7 @@ router.post("/register", async (req, res) => {
     username,
     email,
     tel,
+    place,
     skills,
     password: passwordHash,
     stars: 0, // Yangi foydalanuvchiga 0 yulduz qo'yish

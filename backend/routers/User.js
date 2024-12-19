@@ -18,7 +18,7 @@ router.get("/me", auth, (req, res, next) => {
 
 // all get users
 router.get("/user-all", auth, async (req, res) => {
-  let allData = await user.find();
+  let allData = await User.find();
 
   res.json({
     status: true,

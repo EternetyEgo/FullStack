@@ -2,24 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  display: none !important;
 }
 
+body::-webkit-scrollbar-track {
+  background: green; /* Scrollbar track color */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: green; /* Scrollbar thumb color */
+  border-radius: 5px;
+}
 
 .hero {
   width: 100%;
   height: 100%;
-  --color: #E1E1E1;
+  --color: #e1e1e1;
   background-color: #ffffff00;
-  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
-    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    );
   background-size: 65px 65px;
 }
 
 @media (max-width: 1024px) {
-
   /* Adjust font size for tablets */
   .text-lg {
     font-size: 1rem;
@@ -37,10 +70,8 @@ body {
   }
 }
 
-
-
 /* animation  */
-.boxesParent{
+.boxesParent {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,8 +122,8 @@ body {
   animation: box4 var(--duration) linear infinite;
 }
 
-.boxes .box>div {
-  --background: #5C8DF6;
+.boxes .box > div {
+  --background: #5c8df6;
   --top: auto;
   --right: auto;
   --bottom: auto;
@@ -108,34 +139,34 @@ body {
   right: var(--right);
   bottom: var(--bottom);
   left: var(--left);
-  transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
+  transform: rotateY(var(--rotateY)) rotateX(var(--rotateX))
+    translateZ(var(--translateZ));
 }
 
-.boxes .box>div:nth-child(1) {
+.boxes .box > div:nth-child(1) {
   --top: 0;
   --left: 0;
 }
 
-.boxes .box>div:nth-child(2) {
+.boxes .box > div:nth-child(2) {
   --background: #145af2;
   --right: 0;
   --rotateY: 90deg;
 }
 
-.boxes .box>div:nth-child(3) {
+.boxes .box > div:nth-child(3) {
   --background: #447cf5;
   --rotateX: -90deg;
 }
 
-.boxes .box>div:nth-child(4) {
-  --background: #DBE3F4;
+.boxes .box > div:nth-child(4) {
+  --background: #dbe3f4;
   --top: 0;
   --left: 0;
   --translateZ: calc(var(--size) * 3 * -1);
 }
 
 @-webkit-keyframes box1 {
-
   0%,
   50% {
     transform: translate(100%, 0);
@@ -147,7 +178,6 @@ body {
 }
 
 @keyframes box1 {
-
   0%,
   50% {
     transform: translate(100%, 0);
@@ -187,7 +217,6 @@ body {
 }
 
 @-webkit-keyframes box3 {
-
   0%,
   50% {
     transform: translate(100%, 100%);
@@ -199,7 +228,6 @@ body {
 }
 
 @keyframes box3 {
-
   0%,
   50% {
     transform: translate(100%, 100%);

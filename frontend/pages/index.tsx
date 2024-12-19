@@ -1,6 +1,4 @@
-import Image from "next/image";
 import localFont from "next/font/local";
-import Register from "@/components/Register";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Home/Hero";
 import Users from "@/components/Home/Users";

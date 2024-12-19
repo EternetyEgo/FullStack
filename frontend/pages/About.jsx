@@ -2,12 +2,11 @@ import React from "react";
 import AbtSld from "../components/AbtSld";
 import Navbar from "../components/Navbar"
 
-const AboutUs = () => {
+const About = () => {
   return (
     <div>
       <Navbar />
       <section className="relative w-full h-[90vh] bg-cover bg-top">
-        {/* Background Image with overlay */}
         <div
           className="absolute inset-0 bg-cover bg-top opacity-70"
           style={{
@@ -30,4 +29,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default About;

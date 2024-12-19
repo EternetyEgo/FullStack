@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Main() {
   return (
-    <div className="text-center py-2  bg-[#020817] text-white pt-40  rounded-t-[30px]">
+    <div className="text-center py-2  bg-[#020817] text-white pt-40  rounded-t-[90px]">
       <div className="py-16 h-[60vh] flex flex-col items-start justify-center bg-[#020817] text-white text-left px-6 md:px-12">
         <h2 className="text-6xl sm:text-7xl lg:text-[120px] font-bold mb-6 lg:mb-10 leading-tight lg:leading-[1.1]">
           Bepul portfolio saytingizni sinab <br className="hidden lg:block" />

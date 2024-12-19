@@ -40,7 +40,7 @@ function Navbar() {
             <a href="./Contact" className="hover:text-black transition-all">
               Aloqa
             </a>
-            <a href="./Contact" className="hover:text-black transition-all">
+            <a href="./Quiz" className="hover:text-black transition-all">
               Viktorina
             </a>
           </h2>
